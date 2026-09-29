@@ -16,8 +16,8 @@ export const DEPOT_INFO: DepotInfo = {
   openingHours: 'Mon – Sat: 7:30 AM – 6:30 PM | Sun: 1:00 PM – 5:30 PM',
   bankDetails: {
     bankName: 'First Bank of Nigeria',
-    accountName: 'SHAMONS Poultry & Feeds Kaltungo',
-    accountNumber: '2034981726',
+    accountName: 'SHAMONS RESTURANT',
+    accountNumber: '2017902276',
     branch: 'Kaltungo Branch, Gombe State',
   },
 };

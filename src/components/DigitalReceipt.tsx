@@ -80,7 +80,7 @@ export const DigitalReceipt: React.FC<DigitalReceiptProps> = ({ order, onClose }
                   S
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
-                  shamonsPOULTRY & FEEDS
+                  shamons Poultry & Feeds
                 </h2>
               </div>
               <p className="text-xs text-slate-600 font-semibold">
@@ -185,7 +185,7 @@ export const DigitalReceipt: React.FC<DigitalReceiptProps> = ({ order, onClose }
                 Bank: <strong>First Bank of Nigeria</strong>
               </div>
               <div className="text-slate-600">
-                Acc No: <strong>2034981726</strong>
+                Acc No: <strong>2017902276</strong>
               </div>
               <div className="text-slate-600">
                 Sender: <strong>{order.paymentDetails?.senderName || order.customerName}</strong>
