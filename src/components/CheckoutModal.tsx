@@ -126,7 +126,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         address: address.trim() || undefined,
         lga,
         fulfillmentMethod,
-        deliveryOrPickupLocation: fulfillmentMethod === 'local_delivery' ? `Delivery: ${address} (${lga})` : `Store Pickup: Shamon Depot Kaltungo`,
+        deliveryOrPickupLocation: fulfillmentMethod === 'local_delivery' ? `Delivery: ${address} (${lga})` : `Store Pickup: shamonsDepot Kaltungo`,
         items,
         totalAmount,
         paymentMethod: 'bank_transfer',
@@ -537,7 +537,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 Booking Successfully Placed!
               </h3>
               <p className="text-xs text-slate-600 mt-1 max-w-sm mx-auto">
-                Your poultry booking is registered with Shamon Depot Kaltungo. Our dispatch team is verifying the bank transfer.
+                Your poultry booking is registered with shamonsDepot Kaltungo. Our dispatch team is verifying the bank transfer.
               </p>
             </div>
 

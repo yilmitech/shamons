@@ -164,7 +164,7 @@ export const LivePriceTickerNotifier: React.FC<LivePriceTickerNotifierProps> = (
       badge: "📍 Kaltungo Depot Alert",
       badgeColor: "bg-purple-100 text-purple-950 border-purple-300",
       title: "Daily Fresh Feeds & DOC Collection",
-      subtitle: "First Bank Account: 2034981726 (Shamon Poultry & Feeds)",
+      subtitle: "First Bank Account: 2034981726 (shamonsPoultry & Feeds)",
       primaryPrice: "Verified Rates",
       statusText: "Open Mon–Sat 7:30 AM – 6:30 PM",
       statusType: "info",

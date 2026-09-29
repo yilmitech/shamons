@@ -42,7 +42,7 @@ export function exportConsolidatedReportCSV(
   const rows: string[] = [];
 
   // ================= 1. HEADER & SUMMARY =================
-  rows.push("SHAMON POULTRY & FEEDS - COMPREHENSIVE DEPOT REPORT");
+  rows.push("shamonsPOULTRY & FEEDS - COMPREHENSIVE DEPOT REPORT");
   rows.push(`"Location:","Kaltungo, Gombe State, Nigeria"`);
   rows.push(`"Generated At:",${escapeCSV(timestamp)}`);
   rows.push("");
@@ -245,7 +245,7 @@ export function exportCurrentInventoryCSV(birds: BirdProduct[], feeds: FeedProdu
   const dateSlug = new Date().toISOString().substring(0, 10);
   const rows: string[] = [];
 
-  rows.push("SHAMON POULTRY & FEEDS - CURRENT INVENTORY REPORT");
+  rows.push("shamonsPOULTRY & FEEDS - CURRENT INVENTORY REPORT");
   rows.push(`"Generated At:",${escapeCSV(timestamp)}`);
   rows.push("");
   rows.push("Item Type,Category / Brand,Product Name,Age / Variant,Available Stock,Units Sold,Status,Full Unit Price (NGN),Half Unit Price (NGN),Carton Price (NGN),Avg Weight / Specs,Estimated Value (NGN)");
@@ -338,7 +338,7 @@ export function exportPriceAnalyticsCSV(birds: BirdProduct[], feeds: FeedProduct
   const dateSlug = new Date().toISOString().substring(0, 10);
   const rows: string[] = [];
 
-  rows.push("SHAMON POULTRY & FEEDS - PRICE ANALYTICS & VALUATION MATRIX");
+  rows.push("shamonsPOULTRY & FEEDS - PRICE ANALYTICS & VALUATION MATRIX");
   rows.push(`"Generated At:",${escapeCSV(timestamp)}`);
   rows.push("");
   rows.push("--- FEED PRICING & WEIGHT ANALYTICS ---");
@@ -441,7 +441,7 @@ export function exportBookingsListCSV(
       : "ALL BOOKINGS & ORDERS";
 
   const rows: string[] = [];
-  rows.push(`SHAMON POULTRY & FEEDS - ${title}`);
+  rows.push(`shamonsPOULTRY & FEEDS - ${title}`);
   rows.push(`"Generated At:",${escapeCSV(timestamp)}`);
   rows.push(`"Total Records:",${filtered.length}`);
   rows.push("");

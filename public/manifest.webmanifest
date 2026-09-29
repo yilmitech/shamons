@@ -1,7 +1,7 @@
 {
-  "name": "Shamon Poultry & Feeds Kaltungo",
-  "short_name": "Shamon Poultry",
-  "description": "Offline-first poultry and feed booking, inventory tracking, and virtual receipt generator for Shamon in Kaltungo.",
+  "name": "shamonsPoultry & Feeds Kaltungo",
+  "short_name": "shamonsPoultry",
+  "description": "Offline-first poultry and feed booking, inventory tracking, and virtual receipt generator for shamonsin Kaltungo.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#064e3b",

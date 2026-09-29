@@ -71,7 +71,7 @@ export function getWhatsAppOrderUrl(order: Order): string {
     )
     .join('\n');
 
-  const text = `*SHAMON POULTRY & FEEDS KALTUNGO - BOOKING NOTICE*
+  const text = `*shamonsPOULTRY & FEEDS KALTUNGO - BOOKING NOTICE*
 ━━━━━━━━━━━━━━━━━━━━
 📌 *Booking Code:* ${order.bookingCode}
 👤 *Customer:* ${order.customerName}

@@ -1,5 +1,5 @@
 /**
- * Shamon Poultry & Feeds - lightweight local read cache.
+ * shamonsPoultry & Feeds - lightweight local read cache.
  *
  * Supabase (see src/lib/storage.ts) is the source of truth for products,
  * orders, and customer/alert data. This file exists only to give the Admin

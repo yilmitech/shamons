@@ -862,7 +862,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
 
   const handleAdminConfirmPayment = async (bookingId: string) => {
     try {
-      await StorageService.updateOrderStatus(bookingId, "payment_verified", "Payment confirmed by Shamon Store Audit.");
+      await StorageService.updateOrderStatus(bookingId, "payment_verified", "Payment confirmed by shamonsStore Audit.");
       const foundBooking = bookings.find((b) => b.id === bookingId || b.bookingRef === bookingId || b.bookingCode === bookingId);
       if (foundBooking) {
         setAdminReceiptBooking({ ...foundBooking, paymentStatus: "payment_confirmed" as any, status: "payment_verified" as any });
@@ -1055,7 +1055,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
             </div>
             <h4 className="text-xl font-bold text-gray-900 mb-1">Admin Sign In</h4>
             <p className="text-xs text-gray-500 mb-6">
-              Sign in with your Shamon staff account to manage stock inventory, customer requests, and prices.
+              Sign in with your shamonsstaff account to manage stock inventory, customer requests, and prices.
             </p>
             {checkingSession ? (
               <p className="text-xs text-gray-400">Checking session…</p>
@@ -2573,7 +2573,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
                 <div className="bg-white rounded-xl border border-emerald-100 p-5 shadow-xs max-w-lg">
                   <h4 className="text-sm font-bold text-gray-900 mb-1 flex items-center gap-2">
                     <Building2 className="w-4 h-4 text-emerald-600" />
-                    Shamon Bank Account Settings
+                    shamonsBank Account Settings
                   </h4>
                   <p className="text-xs text-gray-500 mb-4">
                     Account details shown to customers during transfer checkout.

@@ -6,5 +6,5 @@
   <circle cx="328" cy="240" r="9" fill="#047857" />
   <path d="M344 246 L372 254 L344 262 Z" fill="#f59e0b" />
   <path d="M295 200 C300 180, 318 170, 332 178 C328 192, 318 198, 295 200 Z" fill="#ef4444" />
-  <text x="256" y="415" text-anchor="middle" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="44" font-weight="900" letter-spacing="3">SHAMON POULTRY</text>
+  <text x="256" y="415" text-anchor="middle" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="44" font-weight="900" letter-spacing="3">shamonsPOULTRY</text>
 </svg>

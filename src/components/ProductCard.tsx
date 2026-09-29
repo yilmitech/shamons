@@ -105,9 +105,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }
         <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
           {product.brand && (
             <span className="bg-white/95 backdrop-blur-md text-gray-700 text-[11px] font-extrabold px-2.5 py-1 rounded-md shadow-xs border border-gray-100">
-              {product.brand === 'Shamon Hatchery'
+              {product.brand === 'shamonsHatchery'
                 ? 'Certified DOC'
-                : product.brand === 'Shamon Farms' || product.brand === 'Shamon Farm'
+                : product.brand === 'shamonsFarms' || product.brand === 'shamonsFarm'
                 ? 'Live Birds'
                 : product.brand}
             </span>

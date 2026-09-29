@@ -236,7 +236,7 @@ export default function App() {
         {/* Top Standalone Admin Banner */}
         <div className="bg-slate-900 border-b border-slate-800 px-4 py-2.5 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="font-extrabold text-sm text-amber-300">Shamon Kaltungo</span>
+            <span className="font-extrabold text-sm text-amber-300">shamonsKaltungo</span>
             <span className="text-slate-400 text-xs">•</span>
             <span className="text-slate-300 text-xs font-semibold">Separate Admin Route (/#/admin)</span>
           </div>
