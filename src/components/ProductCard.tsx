@@ -105,9 +105,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }
         <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
           {product.brand && (
             <span className="bg-white/95 backdrop-blur-md text-gray-700 text-[11px] font-extrabold px-2.5 py-1 rounded-md shadow-xs border border-gray-100">
-              {product.brand === 'shamonsHatchery'
+              {product.brand === 'shamons Hatchery'
                 ? 'Certified DOC'
-                : product.brand === 'shamonsFarms' || product.brand === 'shamonsFarm'
+                : product.brand === 'shamons Farms' || product.brand === 'shamons Farm'
                 ? 'Live Birds'
                 : product.brand}
             </span>
@@ -196,7 +196,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }
                   id={`unit-carton-${product.id}`}
                 >
                   <span className="font-extrabold">Full Carton</span>
-                  <span className="text-[10px] text-slate-500 font-medium">50 chicks + 1 bonus</span>
+                  <span className="text-[10px] text-slate-500 font-medium">50 chicks</span>
                   <span className="text-[11px] text-emerald-700 font-black">
                     {formatNaira(product.chickPricing?.pricePerCarton || product.basePrice)}
                   </span>

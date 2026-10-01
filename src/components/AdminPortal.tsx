@@ -796,6 +796,8 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
         }
       }
       allProds[targetProdIndex] = prod;
+
+      
       try {
         await StorageService.saveProducts(allProds);
         if (onUpdateProducts) onUpdateProducts(allProds);
@@ -862,7 +864,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
 
   const handleAdminConfirmPayment = async (bookingId: string) => {
     try {
-      await StorageService.updateOrderStatus(bookingId, "payment_verified", "Payment confirmed by shamonsStore Audit.");
+      await StorageService.updateOrderStatus(bookingId, "payment_verified", "Payment confirmed by shamons Store Audit.");
       const foundBooking = bookings.find((b) => b.id === bookingId || b.bookingRef === bookingId || b.bookingCode === bookingId);
       if (foundBooking) {
         setAdminReceiptBooking({ ...foundBooking, paymentStatus: "payment_confirmed" as any, status: "payment_verified" as any });
@@ -1017,7 +1019,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-lg font-bold text-white">SHAMONS Admin Portal</h3>
+                <h3 className="text-lg font-bold text-white">shamons  Admin Portal</h3>
                 <span className="bg-emerald-800 text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                   Kaltungo
                 </span>
@@ -1055,7 +1057,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
             </div>
             <h4 className="text-xl font-bold text-gray-900 mb-1">Admin Sign In</h4>
             <p className="text-xs text-gray-500 mb-6">
-              Sign in with your shamonsstaff account to manage stock inventory, customer requests, and prices.
+              Sign in with your shamons staff account to manage stock inventory, customer requests, and prices.
             </p>
             {checkingSession ? (
               <p className="text-xs text-gray-400">Checking session…</p>
@@ -1103,11 +1105,15 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
           <div className="flex-1 flex flex-col min-h-0">
             {/* Save Status Toast */}
             {saveStatus && (
-              <div className="bg-emerald-600 text-white text-xs font-bold px-4 py-2 text-center animate-fade-in flex items-center justify-center gap-2">
-                <CheckCircle2 className="w-4 h-4" />
-                <span>{saveStatus}</span>
-              </div>
-            )}
+  <div
+    role="status"
+    aria-live="polite"
+    className="fixed top-4 left-1/2 -translate-x-1/2 z-[70] bg-red-600 text-white text-sm font-bold px-5 py-3 rounded-xl shadow-2xl flex items-center gap-2 animate-fade-in"
+  >
+    <CheckCircle2 className="w-5 h-5 text-red-200" />
+    <span>{saveStatus}</span>
+  </div>
+)}
 
             {/* Navigation Tabs */}
             <div className="bg-gray-100 px-3 sm:px-4 py-2 border-b border-gray-200 flex flex-wrap items-center justify-between gap-2 shrink-0">
@@ -2573,7 +2579,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
                 <div className="bg-white rounded-xl border border-emerald-100 p-5 shadow-xs max-w-lg">
                   <h4 className="text-sm font-bold text-gray-900 mb-1 flex items-center gap-2">
                     <Building2 className="w-4 h-4 text-emerald-600" />
-                    shamonsBank Account Settings
+                    shamons Bank Account Settings
                   </h4>
                   <p className="text-xs text-gray-500 mb-4">
                     Account details shown to customers during transfer checkout.

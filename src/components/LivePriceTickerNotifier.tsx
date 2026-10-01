@@ -87,7 +87,7 @@ export const LivePriceTickerNotifier: React.FC<LivePriceTickerNotifierProps> = (
       if (isDoc) {
         priceStr = `₦${prod.basePrice.toLocaleString()}/ctn`;
         const estUnit = Math.round(prod.basePrice / 50);
-        unitLabel = `(50 chicks + 1 bonus • ~₦${estUnit.toLocaleString()}/chick)`;
+        unitLabel = `(50 chicks • ~₦${estUnit.toLocaleString()}/chick)`;
       } else {
         priceStr = `₦${prod.basePrice.toLocaleString()}/bird`;
       }
@@ -164,7 +164,7 @@ export const LivePriceTickerNotifier: React.FC<LivePriceTickerNotifierProps> = (
       badge: "📍 Kaltungo Depot Alert",
       badgeColor: "bg-purple-100 text-purple-950 border-purple-300",
       title: "Daily Fresh Feeds & DOC Collection",
-      subtitle: "First Bank Account: 2017902276 (shamons resturant)",
+      subtitle: "First Bank Account: 2017902276 (shamons  resturant)",
       primaryPrice: "Verified Rates",
       statusText: "Open Mon–Sat 7:30 AM – 6:30 PM",
       statusType: "info",

@@ -6,7 +6,7 @@ import { DepotInfo } from '../types';
 // Product catalog, stock, and orders live in Supabase — see src/lib/storage.ts
 // and supabase/schema.sql.
 export const DEPOT_INFO: DepotInfo = {
-  name: 'SHAMONS Poultry & Feeds',
+  name: 'shamons  Poultry & Feeds',
   address: 'Kaltungo',
   landmark: 'Kaltungo, Gombe State',
   city: 'Kaltungo',
@@ -16,7 +16,7 @@ export const DEPOT_INFO: DepotInfo = {
   openingHours: 'Mon – Sat: 7:30 AM – 6:30 PM | Sun: 1:00 PM – 5:30 PM',
   bankDetails: {
     bankName: 'First Bank of Nigeria',
-    accountName: 'SHAMONS RESTURANT',
+    accountName: 'shamons  RESTURANT',
     accountNumber: '2017902276',
     branch: 'Kaltungo Branch, Gombe State',
   },

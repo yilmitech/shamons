@@ -1,5 +1,5 @@
 -- =============================================================================
--- SHAMONS Poultry & Feeds — Supabase schema
+-- shamons  Poultry & Feeds — Supabase schema
 -- Run this once in your Supabase project: SQL Editor > New query > paste > Run.
 -- Safe to re-run (uses IF NOT EXISTS / CREATE OR REPLACE throughout).
 -- =============================================================================

@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div>
             <div className="flex items-center gap-2">
               <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900">
-                SHAMONS
+                shamons 
               </h1>
               <span className="hidden xs:inline-block px-2 py-0.5 text-[11px] font-semibold bg-emerald-50 text-emerald-700 rounded-full">
                 Poultry &amp; Feeds

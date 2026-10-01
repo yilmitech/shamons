@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({
     <div className="bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8 sm:pt-8 sm:pb-10">
         <div className="mb-6">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Welcome to Shamons</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Welcome to shamons </h2>
           <p className="text-sm text-gray-500">
             {new Date().toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long' })}
             {' '}• Book fresh chicks, birds &amp; feeds in minutes

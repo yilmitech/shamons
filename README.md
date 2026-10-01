@@ -1,4 +1,4 @@
-# SHAMONS Poultry & Feeds — Kaltungo, Gombe State
+# shamons  Poultry & Feeds — Kaltungo, Gombe State
 
 A booking & ordering app for a local poultry/feed distributor. Customers browse
 stock, book day-old chicks / birds / feed, and pay by bank transfer. Staff

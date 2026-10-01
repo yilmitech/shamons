@@ -80,7 +80,7 @@ export const DigitalReceipt: React.FC<DigitalReceiptProps> = ({ order, onClose }
                   S
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
-                  shamons Poultry & Feeds
+                  shamons  Poultry & Feeds
                 </h2>
               </div>
               <p className="text-xs text-slate-600 font-semibold">
@@ -224,7 +224,7 @@ export const DigitalReceipt: React.FC<DigitalReceiptProps> = ({ order, onClose }
                 OFFICIAL VERIFIED VOUCHER
               </div>
               <div className="text-xs font-bold text-emerald-900 mt-0.5">
-                shamonsKALTUNGO DEPOT
+                shamons KALTUNGO DEPOT
               </div>
               <div className="text-[9px] text-emerald-700">Gombe State, Nigeria</div>
             </div>

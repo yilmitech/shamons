@@ -1,6 +1,6 @@
 {
-  "name": "SHAMONS Poultry & Feeds",
-  "description": "Mobile and offline-first poultry and feed booking, inventory, and point-of-sale platform for SHAMONS in Kaltungo. Features virtual receipts, single chick and carton ordering, price analytics, real-time stock tracking, new batch restock logging, and CSV exports. Backed by Supabase for product catalog, orders, and admin authentication.",
+  "name": "shamons  Poultry & Feeds",
+  "description": "Mobile and offline-first poultry and feed booking, inventory, and point-of-sale platform for shamons  in Kaltungo. Features virtual receipts, single chick and carton ordering, price analytics, real-time stock tracking, new batch restock logging, and CSV exports. Backed by Supabase for product catalog, orders, and admin authentication.",
   "requestFramePermissions": [],
   "majorCapabilities": []
 }

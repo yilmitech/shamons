@@ -1,5 +1,5 @@
 -- =============================================================================
--- SHAMONS Poultry & Feeds — starting catalog data
+-- shamons  Poultry & Feeds — starting catalog data
 -- Run this AFTER schema.sql. Safe to re-run (upserts on id).
 --
 -- Note on images: product photos live in public/product-images/ (stable,
@@ -16,21 +16,21 @@ insert into public.products
 values
   ('doc-broiler-cobb500', 'Day-Old Chicks (DOC) - Broiler', 'birds', 'doc', 'Certified DOC', null,
    'Commercial broiler chicks. Excellent feed conversion with low mortality rate when properly brooded.',
-   38500, 'Carton (50 Chicks + 1 Bonus)', 1, '/product-images/doc-broiler-cobb500.jpg', false, null,
+   38500, 'Carton (50 Chicks)', 1, '/product-images/doc-broiler-cobb500.jpg', false, null,
    '{"pricePerChick":770,"pricePerCarton":38500,"chicksPerCarton":50}', true, 85,
-   array['Vaccinated against Marek & Newcastle Disease at Hatchery','High livability rate (>98%) with proper temperature care','Order single chicks or full cartons with bonus'],
+   array['Vaccinated against Marek & Newcastle Disease at Hatchery','High livability rate (>98%) with proper temperature care','Order single chicks or full cartons'],
    '{"targetAge":"Day 0 to Week 7","usage":"Commercial meat production & quick turnaround"}'),
 
   ('doc-noiler', 'Day-Old Noilers (DOC)', 'birds', 'doc', 'Certified DOC', null,
    'Dual-purpose day-old chicks suitable for rural free-range and semi-intensive systems for delicious meat and eggs.',
-   37500, 'Carton (50 Chicks + 1 Bonus)', 1, '/product-images/doc-noiler.jpg', false, null,
+   37500, 'Carton (50 Chicks)', 1, '/product-images/doc-noiler.jpg', false, null,
    '{"pricePerChick":750,"pricePerCarton":37500,"chicksPerCarton":50}', true, 60,
    array['Dual-purpose chicks for both meat and egg production','Thrives in local Northern climate conditions','Very active and quick to feed','Supplied in heat-insulated transport cartons','Order single chicks or full cartons'],
    null),
 
   ('doc-layer-isabrown', 'Day-Old Pullets (DOC Layers)', 'birds', 'doc', 'Certified DOC', null,
    'High-yield commercial brown egg layers with consistent laying performance and strong eggshell quality.',
-   42000, 'Carton (50 Pullets + 1 Bonus)', 1, '/product-images/doc-layer-isabrown.jpg', false, null,
+   42000, 'Carton (50 Pullets)', 1, '/product-images/doc-layer-isabrown.jpg', false, null,
    '{"pricePerChick":840,"pricePerCarton":42000,"chicksPerCarton":50}', true, 45,
    array['100% feather-sexed females (pullets)','Very calm temperament, low feed consumption per egg','Hatchery vaccinated for Gumboro & Marek'],
    null),

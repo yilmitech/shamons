@@ -314,7 +314,7 @@ export const VirtualReceiptModal: React.FC<VirtualReceiptModalProps> = ({
             {/* Watermark Stamp when Paid */}
             <div className="absolute right-4 top-28 sm:top-24 opacity-10 sm:opacity-15 pointer-events-none select-none rotate-[-18deg] flex flex-col items-center justify-center border-4 sm:border-8 border-emerald-700 rounded-full w-36 h-36 sm:w-52 sm:h-52 text-emerald-800 p-2 text-center">
               <span className="text-[10px] sm:text-xs font-black tracking-widest uppercase">
-                shamonsAGRO
+                shamons AGRO
               </span>
               <span className="text-xl sm:text-3xl font-black tracking-wider uppercase my-0.5">
                 {isPaid ? "PAID" : "OFFICIAL"}
@@ -331,7 +331,7 @@ export const VirtualReceiptModal: React.FC<VirtualReceiptModalProps> = ({
                   </div>
                   <div>
                     <h1 className="text-lg sm:text-xl font-black text-emerald-950 tracking-tight leading-tight">
-                      shamonsPOULTRY &amp; FEEDS
+                      shamons POULTRY &amp; FEEDS
                     </h1>
                     <p className="text-[11px] font-semibold text-emerald-800">
                       Day-Old Chicks • Full-Breeded Broilers • Egg Layers • Chikun &amp; Ultima Feeds
@@ -540,7 +540,7 @@ export const VirtualReceiptModal: React.FC<VirtualReceiptModalProps> = ({
                     VERIFY: {currentBooking.bookingRef}
                   </div>
                   <div className="text-[10px] text-gray-500">
-                    Scan or present at shamonsStore Kaltungo
+                    Scan or present at shamons Store Kaltungo
                   </div>
                 </div>
               </div>
@@ -548,7 +548,7 @@ export const VirtualReceiptModal: React.FC<VirtualReceiptModalProps> = ({
               {/* Signature / Stamp line */}
               <div className="text-center sm:text-right space-y-1">
                 <div className="font-serif italic font-bold text-emerald-950 text-sm">
-                  shamonsAudit &amp; Dispatch Dept
+                  shamons Audit &amp; Dispatch Dept
                 </div>
                 <div className="w-44 h-0.5 bg-gray-300 mx-auto sm:ml-auto" />
                 <div className="text-[9px] uppercase tracking-wider text-gray-400 font-bold">
@@ -559,7 +559,7 @@ export const VirtualReceiptModal: React.FC<VirtualReceiptModalProps> = ({
 
             {/* Store Policy Notice */}
             <div className="text-center text-[10px] text-gray-400 pt-1">
-              Thank you for partnering with shamonsPoultry &amp; Feeds Kaltungo. For inquiries or live pen
+              Thank you for partnering with shamons Poultry &amp; Feeds Kaltungo. For inquiries or live pen
               support, contact +234 803 456 7890.
             </div>
           </div>

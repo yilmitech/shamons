@@ -89,7 +89,7 @@ export function formatReceiptText(
   const isPaid = booking.paymentStatus === "payment_confirmed";
 
   let text = `==============================\n`;
-  text += `shamons Poultry & Feeds - VIRTUAL RECEIPT\n`;
+  text += `shamons  Poultry & Feeds - VIRTUAL RECEIPT\n`;
   text += `Location: Kaltungo, Gombe State, Nigeria\n`;
   text += `==============================\n`;
   text += `Receipt No: REC-${booking.bookingRef}\n`;
@@ -117,8 +117,8 @@ export function formatReceiptText(
     text += `Bank: ${bankDetails.bankName}\n`;
     text += `Account: ${bankDetails.accountNumber} (${bankDetails.accountName})\n`;
   }
-  text += `Note: Present this virtual receipt or booking reference at shamonsStore Kaltungo for verification.\n`;
-  text += `Thank you for doing business with shamons Poultry & Feeds!\n`;
+  text += `Note: Present this virtual receipt or booking reference at shamons Store Kaltungo for verification.\n`;
+  text += `Thank you for doing business with shamons  Poultry & Feeds!\n`;
   text += `==============================`;
 
   return text;
