@@ -269,14 +269,21 @@ export class StorageService {
     return (data ?? []).map(rowToOrder);
   }
 
+  // Customers are anonymous, so this only INSERTS. It deliberately does not
+  // chain .select() — reading the row back needs SELECT permission on the
+  // orders table, which anonymous visitors don't (and shouldn't) have.
+  // Stock is deducted later by the admin (see deductStockForOrder), because
+  // writing to the products table also requires admin rights.
   static async addOrder(order: Order): Promise<Order | null> {
-    const { data, error } = await supabase
-      .from('orders')
-      .insert(orderToRow(order))
-      .select()
-      .single();
+    const { error } = await supabase.from('orders').insert(orderToRow(order));
 
     if (error) {
+      // 23505 = unique violation: this booking_code is already saved
+      // (e.g. an offline-queued order that already synced). Treat as success
+      // so it doesn't sit in the offline queue forever.
+      if ((error as any).code === '23505') {
+        return order;
+      }
       console.error('Error saving order to Supabase — queueing offline:', error.message);
       this.addToOfflineQueue(order);
       try {
@@ -287,15 +294,12 @@ export class StorageService {
       return null;
     }
 
-    const savedOrder = rowToOrder(data);
-    await this.deductStockForOrder(savedOrder);
-
     try {
-      window.dispatchEvent(new CustomEvent('shamon_order_placed', { detail: savedOrder }));
+      window.dispatchEvent(new CustomEvent('shamon_order_placed', { detail: order }));
     } catch {
       // Ignore if in SSR or test
     }
-    return savedOrder;
+    return order;
   }
 
   // Both admin-portal call sites (booking.id, the Supabase UUID) and any
@@ -368,6 +372,7 @@ export class StorageService {
     }
   }
 
+  // Admin-only: called from the Admin Portal when an order is marked sold.
   static async deductStockForOrder(order: Order): Promise<void> {
     const products = await this.getProducts();
     let changed = false;
